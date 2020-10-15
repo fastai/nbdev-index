@@ -1,4 +1,4 @@
-# nbdev template
+# nbdev-stdlib
 
-Use this template to more easily create your nbdev project.
+nbdev docs lookup for the python standard library.
 
