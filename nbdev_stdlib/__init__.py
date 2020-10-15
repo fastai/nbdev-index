@@ -1,6 +1,6 @@
 __all__ = ['NbdevLookup']
 
-from nbdev import python_mods
+from . import python_mods
 
 class NbdevLookup():
     def __init__(self):
