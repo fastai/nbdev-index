@@ -1,4 +1,5 @@
-from nbdev.python_mods import *
+#!/usr/bin/env python
+from nbdev_stdlib.python_mods import *
 from fastcore.all import *
 
 def create_pymd(f):
