@@ -15,8 +15,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
-    - run: | 
+    - name: install dependencies
+      run: | 
         pip install twine anaconda-cli
         pip install -e ".[dev]"
-    - run: conda install conda-build
-    - run: ./action.sh
+        conda install conda-build
+    - name: parse data & release if appropriate
+      run: ./action.sh
