@@ -11,7 +11,7 @@ env:
 
 jobs:
   release:
-    container: fastai/jekyll
+    container: fastai/miniconda
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
