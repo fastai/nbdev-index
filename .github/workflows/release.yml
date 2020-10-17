@@ -15,11 +15,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
+    - name: setup conda
+      run: |
+        wget https://raw.githubusercontent.com/fastai/fastsetup/master/setup-conda.sh
+        ./setup-conda.sh
+        conda install conda-build
     - name: install dependencies
       run: | 
-        pip install twine anaconda-cli
+        pip install -U twine
         pip install -e ".[dev]"
-        conda install conda-build
-        pip install -U binstar
     - name: parse data & release if appropriate
       run: ./action.sh
