@@ -20,11 +20,11 @@ jobs:
         wget https://raw.githubusercontent.com/fastai/fastsetup/master/setup-conda.sh
         chmod u+x setup-conda.sh
         ./setup-conda.sh
-        conda install conda-build
     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
         pip install -U twine
         pip install -e ".[dev]"
+        conda install conda-build
     - name: parse data & release if appropriate
       run: ./action.sh
