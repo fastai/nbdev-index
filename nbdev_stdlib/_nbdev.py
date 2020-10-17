@@ -8,4 +8,3 @@ class NbdevLookup():
         self.syms = {**py_syms, **mods}
 
     def doc_link(self, s): return self.syms.get(s, None)
-
