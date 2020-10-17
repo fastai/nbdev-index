@@ -1,12 +1,14 @@
 name: release
-schedule:
+on: 
+  schedule:
     - cron: '00 01,13 * * *'
-  workflow_dispatch: #allows you to trigger manually
+  workflow_dispatch:
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
+    - run: pip install twine
     - run: ./action.sh
