@@ -9,7 +9,7 @@ if [[ $(cat difflogs.txt) ]]; then
     echo "Updating index"
     git config --global user.email "github-actions[bot]@users.noreply.github.com"
     git config --global user.name "github-actions[bot]"
-    git add $dir/module_idx.py
+    git add $dir/module_idx.py settings.ini
     git commit -m'Updating index'
     git push
     make release
