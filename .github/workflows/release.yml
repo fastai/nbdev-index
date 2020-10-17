@@ -20,5 +20,6 @@ jobs:
         pip install twine anaconda-cli
         pip install -e ".[dev]"
         conda install conda-build
+        conda update binstar
     - name: parse data & release if appropriate
       run: ./action.sh
