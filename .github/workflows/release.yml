@@ -23,7 +23,7 @@ jobs:
     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
-        conda install anaconda
+        conda install anaconda-client
         pip install -U twine
         pip install -e ".[dev]"
         conda install conda-build
