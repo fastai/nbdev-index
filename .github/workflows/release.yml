@@ -8,12 +8,12 @@ env:
   TWINE_PASSWORD: ${{ secrets.PYPI_PASS }}
   TWINE_USERNAME: ${{ secrets.PYPI_USER }}
   ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
-strategy:
-  matrix:
-    lib: [stdlib, numpy, pandas, pytorch]
 
 jobs:
   release:
+    strategy:
+      matrix:
+        lib: [stdlib, numpy, pandas, pytorch]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
