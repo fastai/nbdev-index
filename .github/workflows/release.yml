@@ -8,6 +8,9 @@ env:
   TWINE_PASSWORD: ${{ secrets.PYPI_PASS }}
   TWINE_USERNAME: ${{ secrets.PYPI_USER }}
   ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+strategy:
+  matrix:
+    lib: [stdlib, numpy, pandas, pytorch]
 
 jobs:
   release:
@@ -28,4 +31,5 @@ jobs:
         pip install -e ".[dev]"
         conda install conda-build
     - name: parse data & release if appropriate
-      run: ./action.sh
+      run: ./action.sh ${{ matrix.lib }}
+
