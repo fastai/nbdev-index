@@ -4,7 +4,7 @@ set -eo pipefail
 python mk_index.py $1
 dir=nbdev_$1
 
-if ! git diff --quiet $dir/_modidx.py; then 
+if [[ "$2" == 'all' ]] || ! git diff --quiet $dir/_modidx.py; then 
     echo "Updating index for $1"
     name="github-actions[bot]"
     [[ -z $(git config --get user.email) ]] && git config --global user.email "$name@users.noreply.github.com"

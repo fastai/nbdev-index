@@ -56,6 +56,6 @@ setuptools.setup(
     long_description_content_type = 'text/markdown',
     zip_safe = False,
     setup_requires=['wheel'],
-    entry_points = { 'nbdev': [f'index={cfg.get("lib_path")}:_nbdev'] },
+    entry_points = { 'nbdev': [f'index={cfg.get("lib_path")}._nbdev'] },
     **setup_cfg)
 

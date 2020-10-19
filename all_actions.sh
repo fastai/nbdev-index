@@ -2,6 +2,6 @@
 
 for i in stdlib numpy pandas pytorch scipy
 do
-  ./action.sh $i
+  ./action.sh $i $1
 done
 
