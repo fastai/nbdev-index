@@ -1,16 +1,23 @@
 #!/bin/bash
 set -eo pipefail
-dir=$(python -c "from configparser import ConfigParser as cp; c = cp(delimiters=['=']); c.read('settings.ini'); print(c['DEFAULT']['lib_path'])")
 
-python tools/get_module_idx.py
-git diff $dir/module_idx.py | tee difflogs.txt
+python mk_index.py $1
+dir=nbdev_$1
 
-if [[ $(cat difflogs.txt) ]]; then 
-    echo "Updating index"
-    git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    git config --global user.name "github-actions[bot]"
-    make release
-    git add $dir/module_idx.py settings.ini
-    git commit -m'Updating index'
-    git push
+if ! git diff --quiet $dir/_modidx.py; then 
+    echo "Updating index for $1"
+    #git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    #git config --global user.name "github-actions[bot]"
+    cp settings-$1.ini settings.ini
+    rm -rf dist
+    python setup.py sdist bdist_wheel
+    #twine upload --repository pypi dist/*
+    #sleep 5
+    #fastrelease_conda_package --upload_user fastai
+    #nbdev_bump_version
+    #rm settings.ini
+    #git add $dir/_modidx.py settings-$1.ini
+    #git commit -m 'Updating index'
+    #git push
 fi
+
