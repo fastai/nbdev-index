@@ -14,7 +14,7 @@ if ! git diff --quiet $dir/_modidx.py; then
     cp _nbdev.py $dir/
     touch $dir/__init__.py
     python setup.py sdist bdist_wheel
-    twine upload --repository pypi dist/*
+    twine upload --repository pypi dist/* || echo "Failed to upload to pypi"
     sleep 5
     fastrelease_conda_package --upload_user fastai
     nbdev_bump_version
