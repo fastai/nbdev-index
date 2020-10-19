@@ -13,7 +13,7 @@ jobs:
   release:
     strategy:
       matrix:
-        lib: [stdlib, numpy, pandas, pytorch]
+        lib: [stdlib, numpy, pandas, pytorch, scipy]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
