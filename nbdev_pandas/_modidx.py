@@ -1626,4 +1626,3 @@ d = { 'mods': [ 'pandas', 'pandas.api.extensions', 'pandas.api.indexers', 'panda
             'pandas.util': { 'pandas.util.hash_array': 'https://pandas.pydata.org/docs/reference/api/pandas.util.hash_array.html#pandas.util.hash_array',
                              'pandas.util.hash_pandas_object': 'https://pandas.pydata.org/docs/reference/api/pandas.util.hash_pandas_object.html#pandas.util.hash_pandas_object'}},
   'settings': {'lib_path': Path('nbdev_pandas')}}
-
