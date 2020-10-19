@@ -2049,3 +2049,4 @@ d = { 'mods': [ 'doc', 'numpy', 'numpy.distutils', 'numpy.doc', 'numpy.lib', 'nu
                                    'numpy.testing.dec.skipif': 'https://numpy.org/doc/stable/reference/generated/numpy.testing.dec.skipif.html#numpy.testing.dec.skipif',
                                    'numpy.testing.dec.slow': 'https://numpy.org/doc/stable/reference/generated/numpy.testing.dec.slow.html#numpy.testing.dec.slow'}},
   'settings': {'lib_path': Path('nbdev_numpy')}}
+

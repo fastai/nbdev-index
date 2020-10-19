@@ -6043,3 +6043,4 @@ d = { 'mods': [ 'collections', 'concurrent', 'curses', 'dbm', 'distutils', 'dist
             'zipapp': { 'zipapp.create_archive': 'https://docs.python.org/3/library/zipapp.html#zipapp.create_archive',
                         'zipapp.get_interpreter': 'https://docs.python.org/3/library/zipapp.html#zipapp.get_interpreter'}},
   'settings': {'lib_path': Path('nbdev_stdlib')}}
+
