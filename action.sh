@@ -16,8 +16,8 @@ if ! git diff --quiet $dir/_modidx.py; then
     python setup.py sdist bdist_wheel
     twine upload --repository pypi dist/* || echo "Failed to upload to pypi"
     sleep 5
-    fastrelease_conda_package --upload_user fastai
-    nbdev_bump_version
+    fastrelease_conda_package --upload_user fastai || echo "Failed to upload to conda"
+    fastrelease_bump_version
     mv settings.ini settings-$1.ini
     git add $dir/_modidx.py settings-$1.ini
     git commit -m "Updating index for $1"
