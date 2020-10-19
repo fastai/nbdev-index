@@ -19,7 +19,6 @@ if ! git diff --quiet $dir/_modidx.py; then
     fastrelease_conda_package --upload_user fastai
     nbdev_bump_version
     mv settings.ini settings-$1.ini
-    git status
     git add $dir/_modidx.py settings-$1.ini
     git commit -m 'Updating index for $1'
     git push
