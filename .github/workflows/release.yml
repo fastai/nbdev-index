@@ -28,7 +28,7 @@ jobs:
       run: | 
         conda install -qy mamba
         mamba install -qy anaconda-client conda-build wheel setuptools
-        pip install -Uqq twine sphinx fastcore pip wheel fastrelease
+        pip install -Uqq twine sphinx fastcore pip wheel fastrelease nbdev
     - name: parse data & release if appropriate
       run: ./action.sh ${{ matrix.lib }}
 
