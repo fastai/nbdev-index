@@ -26,9 +26,8 @@ jobs:
     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
-        conda install anaconda-client
-        pip install -U twine sphinx fastcore
-        conda install conda-build
+        conda install -q anaconda-client conda-build
+        pip install -Uqq twine sphinx fastcore
     - name: parse data & release if appropriate
       run: ./action.sh ${{ matrix.lib }}
 
