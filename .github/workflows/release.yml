@@ -26,9 +26,9 @@ jobs:
     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
-        conda install -q mamba
-        mamba install -q anaconda-client conda-build wheel setuptools
-        pip install -Uqq twine sphinx fastcore pip
+        conda install -qy mamba
+        mamba install -qy anaconda-client conda-build wheel setuptools
+        pip install -Uqqy twine sphinx fastcore pip
     - name: parse data & release if appropriate
       run: ./action.sh ${{ matrix.lib }}
 
