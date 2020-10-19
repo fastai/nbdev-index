@@ -11,9 +11,6 @@ env:
 
 jobs:
   release:
-    strategy:
-      matrix:
-        lib: [stdlib, numpy, pandas, pytorch, scipy]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -28,7 +25,6 @@ jobs:
       run: | 
         conda install -qy mamba
         mamba install -qy anaconda-client conda-build wheel setuptools
-        pip install -Uqq twine sphinx fastcore pip wheel fastrelease nbdev
+        pip install -Uqq twine sphinx fastcore pip wheel fastrelease
     - name: parse data & release if appropriate
-      run: ./action.sh ${{ matrix.lib }}
-
+      run: ./all_actions.sh
