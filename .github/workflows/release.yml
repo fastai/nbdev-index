@@ -27,8 +27,7 @@ jobs:
     - name: install dependencies
       run: | 
         conda install anaconda-client
-        pip install -U twine
-        pip install -e ".[dev]"
+        pip install -U twine sphinx fastcore
         conda install conda-build
     - name: parse data & release if appropriate
       run: ./action.sh ${{ matrix.lib }}
