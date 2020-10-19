@@ -2104,4 +2104,3 @@ d = { 'mods': [ 'torch', 'torch.cuda', 'torch.distributed', 'torch.distributions
             'torchvision.utils': { 'torchvision.utils.make_grid': 'https://pytorch.org/docs/stable/torchvision/utils.html#torchvision.utils.make_grid',
                                    'torchvision.utils.save_image': 'https://pytorch.org/docs/stable/torchvision/utils.html#torchvision.utils.save_image'}},
   'settings': {'lib_path': Path('nbdev_pytorch')}}
-

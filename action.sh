@@ -6,16 +6,19 @@ dir=nbdev_$1
 
 if ! git diff --quiet $dir/_modidx.py; then 
     echo "Updating index for $1"
-    #git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    #git config --global user.name "github-actions[bot]"
+    name="github-actions[bot]"
+    [[ -z $(git config --get user.email) ]] && git config --global user.email "$name@users.noreply.github.com"
+    [[ -z $(git config --get user.name)  ]] && git config --global user.name  "$name"
     cp settings-$1.ini settings.ini
-    rm -rf dist
+    rm -rf dist build
+    cp _nbdev.py $dir/
+    touch $dir/__init__.py
     python setup.py sdist bdist_wheel
-    #twine upload --repository pypi dist/*
-    #sleep 5
-    #fastrelease_conda_package --upload_user fastai
+    twine upload --repository pypi dist/*
+    sleep 5
+    fastrelease_conda_package --upload_user fastai
     #nbdev_bump_version
-    #rm settings.ini
+    mv settings.ini settings-$1.ini
     #git add $dir/_modidx.py settings-$1.ini
     #git commit -m 'Updating index'
     #git push
