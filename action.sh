@@ -20,7 +20,7 @@ if ! git diff --quiet $dir/_modidx.py; then
     nbdev_bump_version
     mv settings.ini settings-$1.ini
     git add $dir/_modidx.py settings-$1.ini
-    git commit -m 'Updating index for $1'
+    git commit -m "Updating index for $1"
     git push
 fi
 
