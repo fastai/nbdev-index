@@ -1,4 +1,5 @@
-#export
+#!/usr/bin/env python
+
 from pprint import pprint
 from io import BytesIO
 from sphinx.util.inventory import InventoryFile
