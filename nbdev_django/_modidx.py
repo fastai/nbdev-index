@@ -1708,3 +1708,4 @@ d = { 'syms': { 'django': { 'django.apps': 'http://django.readthedocs.org/en/lat
                                        'django.views.defaults.server_error': 'http://django.readthedocs.org/en/latest/ref/views.html#django.views.defaults.server_error'},
             'django.views.static': {'django.views.static.serve': 'http://django.readthedocs.org/en/latest/ref/views.html#django.views.static.serve'}},
   'settings': {'lib_path': 'nbdev_django'}}
+#
