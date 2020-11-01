@@ -4306,6 +4306,7 @@ d = { 'syms': { 'collections': { 'collections.abc': 'https://docs.python.org/3/l
                         'turtle.xcor': 'https://docs.python.org/3/library/turtle.html#turtle.xcor',
                         'turtle.ycor': 'https://docs.python.org/3/library/turtle.html#turtle.ycor'},
             'types': { 'types.CodeType': 'https://docs.python.org/3/library/types.html#types.CodeType',
+                       'types.GenericAlias': 'https://docs.python.org/3/library/types.html#types.GenericAlias',
                        'types.MappingProxyType': 'https://docs.python.org/3/library/types.html#types.MappingProxyType',
                        'types.ModuleType': 'https://docs.python.org/3/library/types.html#types.ModuleType',
                        'types.SimpleNamespace': 'https://docs.python.org/3/library/types.html#types.SimpleNamespace',
