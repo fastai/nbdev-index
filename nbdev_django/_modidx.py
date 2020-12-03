@@ -1155,6 +1155,7 @@ d = { 'syms': { 'django': { 'django.apps': 'http://django.readthedocs.org/en/lat
                                             'django.db.models.functions.FirstValue': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.FirstValue',
                                             'django.db.models.functions.Floor': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.Floor',
                                             'django.db.models.functions.Greatest': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.Greatest',
+                                            'django.db.models.functions.JSONObject': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.JSONObject',
                                             'django.db.models.functions.LPad': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.LPad',
                                             'django.db.models.functions.LTrim': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.LTrim',
                                             'django.db.models.functions.Lag': 'http://django.readthedocs.org/en/latest/ref/models/database-functions.html#django.db.models.functions.Lag',
