@@ -26,7 +26,7 @@ mappings = dict(
 class SphinxIndex:
     def __init__(self, url, pre=None):
         if pre is None: pre=url+"/"
-        invs = urlread(f'{url}/objects.inv')
+        invs = urlread(f'{url}/objects.inv', decode=False)
         self.idx = InventoryFile.load(stream=BytesIO(invs), uri=pre, joinfunc=urljoin)
         typs = 'module','class','method','function'
         self.d = {o:self._get(o) for o in typs}
