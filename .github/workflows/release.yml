@@ -13,14 +13,22 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
     - name: setup conda
-      run: |
-        wget https://raw.githubusercontent.com/fastai/fastsetup/master/setup-conda.sh
-        chmod u+x setup-conda.sh
-        ./setup-conda.sh || true
-    - uses: fastai/workflows/conda-env@master
+      uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.9
+          mamba-version: "*"
+          channels: conda-forge,defaults
+          channel-priority: true
+          activate-environment: anaconda-client-env
+#     - name: setup conda
+#       run: |
+#         wget https://raw.githubusercontent.com/fastai/fastsetup/master/setup-conda.sh
+#         chmod u+x setup-conda.sh
+#         ./setup-conda.sh || true
+#     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
         conda install -c defaults -c conda-forge mamba
