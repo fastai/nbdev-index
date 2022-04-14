@@ -23,7 +23,7 @@ jobs:
     - uses: fastai/workflows/conda-env@master
     - name: install dependencies
       run: | 
-        conda install -c conda-forge mamba
+        conda install -c defaults -c conda-forge mamba
         mamba install -qy anaconda-client conda-build wheel setuptools
         pip install -Uqq twine sphinx fastcore pip wheel fastrelease
     - name: parse data & release if appropriate
