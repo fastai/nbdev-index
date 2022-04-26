@@ -14,8 +14,8 @@ if [[ "$2" == 'all' ]] || ! git diff --quiet $dir/_modidx.py; then
     cp _nbdev.py $dir/
     touch $dir/__init__.py
     python setup.py sdist bdist_wheel
-    #twine upload --repository pypi dist/* || echo "Failed to upload to pypi"
-    #sleep 5
+    twine upload --repository pypi dist/* || echo "Failed to upload to pypi"
+    sleep 5
     fastrelease_conda_package --upload_user fastai || echo "Failed to upload to conda"
     fastrelease_bump_version
     mv settings.ini settings-$1.ini
