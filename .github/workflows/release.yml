@@ -28,4 +28,4 @@ jobs:
         mamba install -qy anaconda-client conda-build wheel setuptools
         pip install -Uqq twine sphinx fastcore pip wheel fastrelease
     - name: parse data & release if appropriate
-      run: bash all_actions.sh
+      run: bash all_actions.sh all
