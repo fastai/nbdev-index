@@ -324,6 +324,7 @@ d = { 'syms': { 'django': { 'django.apps': 'http://django.readthedocs.org/en/lat
                               'django.forms.Field.get_bound_field': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Field.get_bound_field',
                               'django.forms.Field.has_changed': 'http://django.readthedocs.org/en/latest/ref/forms/fields.html#django.forms.Field.has_changed',
                               'django.forms.Form.add_error': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Form.add_error',
+                              'django.forms.Form.as_div': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Form.as_div',
                               'django.forms.Form.as_p': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Form.as_p',
                               'django.forms.Form.as_table': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Form.as_table',
                               'django.forms.Form.as_ul': 'http://django.readthedocs.org/en/latest/ref/forms/api.html#django.forms.Form.as_ul',
