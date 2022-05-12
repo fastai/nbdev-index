@@ -1113,6 +1113,7 @@ d = { 'syms': { 'django': { 'django.apps': 'http://django.readthedocs.org/en/lat
                                         'django.core.validators.MinValueValidator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.MinValueValidator',
                                         'django.core.validators.ProhibitNullCharactersValidator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.ProhibitNullCharactersValidator',
                                         'django.core.validators.RegexValidator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.RegexValidator',
+                                        'django.core.validators.StepValueValidator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.StepValueValidator',
                                         'django.core.validators.URLValidator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.URLValidator',
                                         'django.core.validators.int_list_validator': 'http://django.readthedocs.org/en/latest/ref/validators.html#django.core.validators.int_list_validator'},
             'django.db.backends.base.schema': { 'django.db.backends.base.schema.BaseDatabaseSchemaEditor': 'http://django.readthedocs.org/en/latest/ref/schema-editor.html#django.db.backends.base.schema.BaseDatabaseSchemaEditor',
