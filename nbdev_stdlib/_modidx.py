@@ -660,6 +660,8 @@ d = { 'syms': { 'collections': { 'collections.abc': 'https://docs.python.org/3/l
                               'test.support.BasicTestRunner.run': 'https://docs.python.org/3/library/test.html#test.support.BasicTestRunner.run',
                               'test.support.Matcher.match_value': 'https://docs.python.org/3/library/test.html#test.support.Matcher.match_value',
                               'test.support.Matcher.matches': 'https://docs.python.org/3/library/test.html#test.support.Matcher.matches',
+                              'test.support.SaveSignals.restore': 'https://docs.python.org/3/library/test.html#test.support.SaveSignals.restore',
+                              'test.support.SaveSignals.save': 'https://docs.python.org/3/library/test.html#test.support.SaveSignals.save',
                               'test.support.anticipate_failure': 'https://docs.python.org/3/library/test.html#test.support.anticipate_failure',
                               'test.support.args_from_interpreter_flags': 'https://docs.python.org/3/library/test.html#test.support.args_from_interpreter_flags',
                               'test.support.bigaddrspacetest': 'https://docs.python.org/3/library/test.html#test.support.bigaddrspacetest',
