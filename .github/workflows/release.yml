@@ -14,18 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4
     - name: setup conda
       uses: conda-incubator/setup-miniconda@v2
       with:
         python-version: 3.9
-        mamba-version: "*"
-        channels: conda-forge,defaults
-        channel-priority: true
-        activate-environment: anaconda-client-env
+        miniforge-variant: Mambaforge
     - name: install dependencies
       run: | 
-        mamba install -qy anaconda-client conda-build wheel setuptools
+        mamba install -qy anaconda-client conda-build wheel setuptools boa
         pip install -Uqq twine sphinx fastcore pip wheel fastrelease
     - name: parse data & release if appropriate
       run: bash all_actions.sh all
