@@ -11,10 +11,12 @@ env:
 
 jobs:
   release:
+    defaults:
+      run:
+        shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-#     - uses: actions/setup-python@v4
     - name: setup conda
       uses: conda-incubator/setup-miniconda@v2
       with:
