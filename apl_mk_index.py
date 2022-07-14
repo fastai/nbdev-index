@@ -1,6 +1,6 @@
 import requests
 import bs4
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote
 from pathlib import Path
 from pprint import pprint
 from fastcore.all import *
@@ -19,7 +19,7 @@ def make_index():
     
     def table2dict(table):
         elements = table.find_all("a")
-        d = {ele.text: f"https://help.dyalog.com/{version}/index.htm#Language/{ele['href'].lstrip('./')}" for ele in elements}
+        d = {ele.text: f"https://help.dyalog.com/{version}/index.htm#Language/{quote(ele['href'].lstrip('./'))}" for ele in elements}
         return d
     
     functions = table2dict(function_table)
