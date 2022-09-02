@@ -41,6 +41,9 @@ mappings = dict(
     sarge='https://sarge.readthedocs.io/en/latest',
     django='https://django.readthedocs.org/en/latest',
     jinja2='https://jinja.readthedocs.org/en/latest',
+    pytest='https://docs.pytest.org/en/stable',
+    
+    linux='https://docs.kernel.org/',
 )
 
 class SphinxIndex:
