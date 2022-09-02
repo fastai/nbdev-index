@@ -14,12 +14,14 @@ mappings = dict(
 
     numpy='https://numpy.org/doc/stable',
     scipy='https://docs.scipy.org/doc/scipy/reference',
+    sympy='https://docs.sympy.org/latest',
     matplotlib='https://matplotlib.org',
     pandas='https://pandas.pydata.org/docs',
     h5py='https://docs.h5py.org/en/latest',
     pandasdatareader='https://pandas-datareader.readthedocs.io/en/latest',
-    # tabulate='https://github.com/astanin/python-tabulate'
-    # kagglepython='https://github.com/Kaggle/docker-python'
+    # https://github.com/scikit-learn-contrib/sklearn-pandas
+    # https://github.com/astanin/python-tabulate
+    # https://github.com/Kaggle/docker-python
     altair='https://altair-viz.github.io',
     pytorch='https://pytorch.org/docs/stable',
     dask='https://docs.dask.org/en/stable',
