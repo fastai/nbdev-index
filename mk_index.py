@@ -24,15 +24,21 @@ mappings = dict(
     # https://github.com/Kaggle/docker-python
     altair='https://altair-viz.github.io',
     pytorch='https://pytorch.org/docs/stable',
+    cudf='https://docs.rapids.ai/api/cudf/stable',
+    # https://github.com/pola-rs/polars-book#status-of-the-code-snippets
+    arrow='https://arrow.apache.org/docs',
     dask='https://docs.dask.org/en/stable',
     daskml='https://ml.dask.org',
+    daskdistributed='https://distributed.dask.org/en/stable',
+    # daskjobqueue='https://jobqueue.dask.org/en/latest'
+    # daskcloudprovider='https://cloudprovider.dask.org/en/latest',
     sklearn='https://scikit-learn.org/stable',
     yellowbrick='https://www.scikit-yb.org/en/latest',
     featuretools='https://featuretools.alteryx.com/en/stable',
     
     sphinx='https://www.sphinx-doc.org/en/stable',
     attrs='https://www.attrs.org/en/stable',
-    sarge='https://sarge.readthedocs.io/en/latest
+    sarge='https://sarge.readthedocs.io/en/latest',
     django='https://django.readthedocs.org/en/latest',
     jinja2='https://jinja.readthedocs.org/en/latest',
 )
