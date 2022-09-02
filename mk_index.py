@@ -31,7 +31,7 @@ mappings = dict(
     sphinx='https://www.sphinx-doc.org/en/stable',
     attrs='https://www.attrs.org/en/stable',
     sarge='https://sarge.readthedocs.io/en/latest
-    django='http://django.readthedocs.org/en/latest',
+    django='https://django.readthedocs.org/en/latest',
     jinja2='https://jinja.readthedocs.org/en/latest',
 )
 
