@@ -11,16 +11,28 @@ from fastcore.all import *
 
 mappings = dict(
     stdlib='https://docs.python.org/3',
-    numpy='https://numpy.org/doc/stable/',
+
+    numpy='https://numpy.org/doc/stable',
     scipy='https://docs.scipy.org/doc/scipy/reference',
     matplotlib='https://matplotlib.org',
     pandas='https://pandas.pydata.org/docs',
-    h5py='https://docs.h5py.org/en/latest/',
-    sphinx='https://www.sphinx-doc.org/en/stable/',
-    attrs='https://www.attrs.org/en/stable/',
-    sarge='https://sarge.readthedocs.io/en/latest/',
+    h5py='https://docs.h5py.org/en/latest',
+    pandasdatareader='https://pandas-datareader.readthedocs.io/en/latest',
+    # tabulate='https://github.com/astanin/python-tabulate'
+    # kagglepython='https://github.com/Kaggle/docker-python'
+    altair='https://altair-viz.github.io',
+    pytorch='https://pytorch.org/docs/stable',
+    dask='https://docs.dask.org/en/stable',
+    daskml='https://ml.dask.org',
+    sklearn='https://scikit-learn.org/stable',
+    yellowbrick='https://www.scikit-yb.org/en/latest',
+    featuretools='https://featuretools.alteryx.com/en/stable',
+    
+    sphinx='https://www.sphinx-doc.org/en/stable',
+    attrs='https://www.attrs.org/en/stable',
+    sarge='https://sarge.readthedocs.io/en/latest
     django='http://django.readthedocs.org/en/latest',
-    pytorch='https://pytorch.org/docs/stable'
+    jinja2='https://jinja.readthedocs.org/en/latest',
 )
 
 class SphinxIndex:
