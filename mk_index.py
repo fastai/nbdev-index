@@ -11,16 +11,39 @@ from fastcore.all import *
 
 mappings = dict(
     stdlib='https://docs.python.org/3',
-    numpy='https://numpy.org/doc/stable/',
+
+    numpy='https://numpy.org/doc/stable',
     scipy='https://docs.scipy.org/doc/scipy/reference',
+    sympy='https://docs.sympy.org/latest',
     matplotlib='https://matplotlib.org',
     pandas='https://pandas.pydata.org/docs',
-    h5py='https://docs.h5py.org/en/latest/',
-    sphinx='https://www.sphinx-doc.org/en/stable/',
-    attrs='https://www.attrs.org/en/stable/',
-    sarge='https://sarge.readthedocs.io/en/latest/',
-    django='http://django.readthedocs.org/en/latest',
-    pytorch='https://pytorch.org/docs/stable'
+    h5py='https://docs.h5py.org/en/latest',
+    pandasdatareader='https://pandas-datareader.readthedocs.io/en/latest',
+    # https://github.com/scikit-learn-contrib/sklearn-pandas
+    # https://github.com/astanin/python-tabulate
+    # https://github.com/Kaggle/docker-python
+    altair='https://altair-viz.github.io',
+    pytorch='https://pytorch.org/docs/stable',
+    cudf='https://docs.rapids.ai/api/cudf/stable',
+    # https://github.com/pola-rs/polars-book#status-of-the-code-snippets
+    arrow='https://arrow.apache.org/docs',
+    dask='https://docs.dask.org/en/stable',
+    daskml='https://ml.dask.org',
+    daskdistributed='https://distributed.dask.org/en/stable',
+    # daskjobqueue='https://jobqueue.dask.org/en/latest'
+    # daskcloudprovider='https://cloudprovider.dask.org/en/latest',
+    sklearn='https://scikit-learn.org/stable',
+    yellowbrick='https://www.scikit-yb.org/en/latest',
+    featuretools='https://featuretools.alteryx.com/en/stable',
+    
+    sphinx='https://www.sphinx-doc.org/en/stable',
+    attrs='https://www.attrs.org/en/stable',
+    sarge='https://sarge.readthedocs.io/en/latest',
+    django='https://django.readthedocs.org/en/latest',
+    jinja2='https://jinja.readthedocs.org/en/latest',
+    pytest='https://docs.pytest.org/en/stable',
+    
+    linux='https://docs.kernel.org/',
 )
 
 class SphinxIndex:
