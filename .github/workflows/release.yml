@@ -24,7 +24,7 @@ jobs:
         #miniforge-variant: Mambaforge
     - name: install dependencies
       run: | 
-        mamba install -qy anaconda-client conda-build wheel setuptools boa
+        conda install -qy anaconda-client conda-build wheel setuptools boa mamba
         pip install -Uqq twine sphinx fastcore pip wheel fastrelease
     - name: parse data & release if appropriate
       run: bash all_actions.sh all
