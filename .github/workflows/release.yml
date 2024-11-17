@@ -16,12 +16,12 @@ jobs:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: setup conda
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
-        python-version: 3.9
-        #miniforge-variant: Mambaforge
+        python-version: 3.10
+        miniforge-version: latest
     - name: install dependencies
       run: | 
         conda install -qy anaconda-client conda-build wheel setuptools boa mamba
