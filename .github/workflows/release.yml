@@ -6,7 +6,7 @@ on:
 
 env:
   TWINE_PASSWORD: ${{ secrets.PYPI_PASS }}
-  TWINE_USERNAME: ${{ secrets.PYPI_USER }}
+  TWINE_USERNAME: __token__
   ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
 
 jobs:
