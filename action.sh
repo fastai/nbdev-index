@@ -15,8 +15,7 @@ if [[ "$2" == 'all' ]] || ! git diff --quiet $dir/_modidx.py; then
     touch $dir/__init__.py
     python setup.py sdist bdist_wheel
     twine upload --repository pypi dist/* || echo "Failed to upload to pypi"
-    sleep 5
-    fastrelease_conda_package --upload_user fastai || echo "Failed to upload to conda"
+    sleep 1
     fastrelease_bump_version
     mv settings.ini settings-$1.ini
     git add $dir/_modidx.py settings-$1.ini
