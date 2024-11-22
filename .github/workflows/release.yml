@@ -16,6 +16,10 @@ jobs:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
+    - name: Check required secrets
+      run: |
+        [[ -n "$TWINE_PASSWORD" ]] || { echo "Error: PYPI_PASS secret not set"; exit 1; }
+        [[ -n "$ANACONDA_API_TOKEN" ]] || { echo "Error: ANACONDA_TOKEN secret not set"; exit 1; }
     - uses: actions/checkout@v4
     - name: setup conda
       uses: conda-incubator/setup-miniconda@v3
