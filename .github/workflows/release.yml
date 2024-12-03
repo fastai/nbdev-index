@@ -29,6 +29,6 @@ jobs:
     - name: install dependencies
       run: | 
         conda install -qy anaconda-client conda-build wheel setuptools boa mamba
-        pip install -Uqq twine sphinx fastcore pip wheel fastrelease
+        pip install -Uqq twine sphinx fastcore pip wheel fastrelease nbdev
     - name: parse data & release if appropriate
       run: bash all_actions.sh all
